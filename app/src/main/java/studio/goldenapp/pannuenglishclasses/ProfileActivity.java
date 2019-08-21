@@ -11,21 +11,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth;
+public class ProfileActivity extends AppCompatActivity {
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
-            finish();
-        }
-    }
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +24,17 @@ public class MainActivity extends AppCompatActivity {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
+
         mAuth = FirebaseAuth.getInstance();
 
-        Button click = (Button) findViewById(R.id.click);
-        click.setOnClickListener(new View.OnClickListener() {
+        Button signout = (Button) findViewById(R.id.signout);
+        signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Authentication.class));
+                mAuth.signOut();
+                startActivity(new Intent(ProfileActivity.this,MainActivity.class));
+                finish();
             }
         });
     }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304473336047",
+    "firebase_url": "https://pannu-english-classes.firebaseio.com",
+    "project_id": "pannu-english-classes",
+    "storage_bucket": "pannu-english-classes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304473336047:android:943c00914245e99a",
+        "android_client_info": {
+          "package_name": "studio.goldenapp.pannuenglishclasses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304473336047-vfp3tcdg36phhkmv6isrprg40psvg91p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvTSxG9_r44QNG6QJk2WhGcs2J_mzgV6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304473336047-vfp3tcdg36phhkmv6isrprg40psvg91p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
