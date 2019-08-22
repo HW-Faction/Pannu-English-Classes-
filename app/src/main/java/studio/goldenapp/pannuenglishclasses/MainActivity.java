@@ -1,7 +1,5 @@
 package studio.goldenapp.pannuenglishclasses;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -12,6 +10,8 @@ import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
 
-        Button click = (Button) findViewById(R.id.click);
+        Button click = findViewById(R.id.click);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

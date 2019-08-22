@@ -1,9 +1,8 @@
 package studio.goldenapp.pannuenglishclasses;
+import android.app.AlertDialog;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
@@ -25,8 +24,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.shuhart.stepview.StepView;
 
 import java.util.concurrent.TimeUnit;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Authentication extends AppCompatActivity {
 
@@ -69,16 +72,16 @@ public class Authentication extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        layout1 = (LinearLayout) findViewById(R.id.layout1);
-        layout2 = (LinearLayout) findViewById(R.id.layout2);
-        layout3 = (LinearLayout) findViewById(R.id.layout3);
-        sendCodeButton = (Button) findViewById(R.id.submit1);
-        verifyCodeButton = (Button) findViewById(R.id.submit2);
-        button3 = (Button) findViewById(R.id.submit3);
+        layout1 = findViewById(R.id.layout1);
+        layout2 = findViewById(R.id.layout2);
+        layout3 = findViewById(R.id.layout3);
+        sendCodeButton = findViewById(R.id.submit1);
+        verifyCodeButton = findViewById(R.id.submit2);
+        button3 = findViewById(R.id.submit3);
         firebaseAuth = FirebaseAuth.getInstance();
-        phoneNum = (EditText) findViewById(R.id.phonenumber);
-        verifyCodeET = (PinView) findViewById(R.id.pinView);
-        phonenumberText = (TextView) findViewById(R.id.phonenumberText);
+        phoneNum = findViewById(R.id.phonenumber);
+        verifyCodeET = findViewById(R.id.pinView);
+        phonenumberText = findViewById(R.id.phonenumberText);
 
 
         stepView = findViewById(R.id.step_view);
@@ -119,7 +122,7 @@ public class Authentication extends AppCompatActivity {
             }
         });
 
-        mCallbacks =new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+        mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
                 LayoutInflater inflater = getLayoutInflater();

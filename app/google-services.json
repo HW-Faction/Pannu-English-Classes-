@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "304473336047-hcogg9q3cootsgc0or80ki869sifkdp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "studio.goldenapp.pannuenglishclasses",
+            "certificate_hash": "125b0b79f44d0a5aed8ba19a973350d0a78a738d"
+          }
+        },
+        {
           "client_id": "304473336047-vfp3tcdg36phhkmv6isrprg40psvg91p.apps.googleusercontent.com",
           "client_type": 3
         }
