@@ -113,7 +113,7 @@ public class Authentication extends AppCompatActivity {
                     layout1.setVisibility(View.GONE);
                     layout2.setVisibility(View.VISIBLE);
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            phoneNumber,        // Phone number to verify
+                            "+91"+phoneNumber,        // Phone number to verify
                             60,                 // Timeout duration
                             TimeUnit.SECONDS,   // Unit of timeout
                             Authentication.this,               // Activity (for callback binding)
