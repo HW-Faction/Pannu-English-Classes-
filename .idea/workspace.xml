@@ -16,9 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="395de69a-9cc3-4e09-9311-24597b884e04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/square.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +92,8 @@
       <file leaf-file-name="activity_profile.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="120" column="39" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+            <state relative-caret-position="258">
+              <caret line="210" column="122" selection-start-line="210" selection-start-column="122" selection-end-line="210" selection-end-column="122" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -3062,8 +3059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="120" column="39" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+        <state relative-caret-position="258">
+          <caret line="210" column="122" selection-start-line="210" selection-start-column="122" selection-end-line="210" selection-end-column="122" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">

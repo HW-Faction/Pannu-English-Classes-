@@ -65,7 +65,7 @@
 
             <RelativeLayout
                 android:id="@+id/rl1"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
@@ -182,6 +182,7 @@
                     android:src="@drawable/clipboard"/>
 
                 <EditText
+                    android:id="@+id/et4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Username"
@@ -193,7 +194,25 @@
                     android:layout_alignBottom="@+id/imageViewName4"
                     />
 
+                <Button
+                    android:layout_below="@+id/et4"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:text="Continue"
+                    android:textColor="#fff"
+                    android:id="@+id/continueRegister"
+                    android:background="#6e2c90"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="by clicking continue you agree to share your data with us and agree with our data policy"
+                    android:layout_below="@+id/continueRegister"/>
+
             </RelativeLayout>
+
 
         </RelativeLayout>
 
