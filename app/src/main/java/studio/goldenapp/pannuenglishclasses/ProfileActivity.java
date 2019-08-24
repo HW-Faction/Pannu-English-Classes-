@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ProfileActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
+    private Button continueRegister ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,14 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         mAuth = FirebaseAuth.getInstance();
+        continueRegister = findViewById(R.id.continueRegister);
 
+        continueRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }
