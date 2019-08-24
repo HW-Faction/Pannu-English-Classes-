@@ -87,7 +87,7 @@
                     android:hint="First Name"
                     android:paddingLeft="10dp"
                     android:textSize="18sp"
-                    android:id="@+id/fullname"
+                    android:id="@+id/firstname"
                     android:background="#ccc"
                     android:layout_toRightOf="@id/imageViewName"
                     android:layout_alignParentTop="true"
@@ -184,7 +184,7 @@
                     android:src="@drawable/clipboard"/>
 
                 <EditText
-                    android:id="@+id/et3"
+                    android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Gender (M or F)"
@@ -219,10 +219,10 @@
                     android:src="@drawable/clipboard"/>
 
                 <EditText
-                    android:id="@+id/et4"
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username"
+                    android:hint="Email (Optional)"
                     android:paddingLeft="10dp"
                     android:textSize="18sp"
                     android:background="#ccc"
@@ -232,7 +232,7 @@
                     />
 
                 <Button
-                    android:layout_below="@+id/et4"
+                    android:layout_below="@+id/email"
                     android:layout_marginTop="40dp"
                     android:layout_width="match_parent"
                     android:text="Continue"
