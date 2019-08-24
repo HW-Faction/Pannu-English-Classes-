@@ -232,8 +232,16 @@
                     android:layout_alignBottom="@+id/imageViewName4"
                     />
 
-                <Button
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/checkbox"
                     android:layout_below="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow marketing notifications "/>
+
+                <Button
+                    android:layout_below="@+id/checkbox"
                     android:layout_marginTop="40dp"
                     android:layout_width="match_parent"
                     android:text="Continue"
