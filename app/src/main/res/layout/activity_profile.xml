@@ -84,7 +84,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Full Name"
+                    android:hint="First Name"
                     android:paddingLeft="10dp"
                     android:textSize="18sp"
                     android:id="@+id/fullname"
@@ -96,6 +96,40 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/rl8"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/rl1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewName5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6e2c90"
+                    android:padding="8dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/clipboard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/lastname"
+                    android:background="#ccc"
+                    android:layout_toRightOf="@id/imageViewName5"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName5"
+                    />
+
+            </RelativeLayout>
+
+
 
             <RelativeLayout
                 android:id="@+id/rl2"
@@ -103,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"
-                android:layout_below="@+id/rl1"
+                android:layout_below="@+id/rl8"
                 android:layout_height="wrap_content">
 
                 <ImageView
