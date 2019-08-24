@@ -25,6 +25,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
@@ -51,6 +52,148 @@
                     android:fontFamily="@font/iran_sans_mobile"/>
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_below="@+id/linearLayout"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/square"/>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/imageView1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewName"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6e2c90"
+                    android:padding="8dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/clipboard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/username"
+                    android:background="#ccc"
+                    android:layout_toRightOf="@id/imageViewName"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/rl1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewName1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6e2c90"
+                    android:padding="8dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/clipboard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Place"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:background="#ccc"
+                    android:layout_toRightOf="@id/imageViewName1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName1"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/rl2"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewName3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6e2c90"
+                    android:padding="8dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/clipboard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:background="#ccc"
+                    android:layout_toRightOf="@id/imageViewName3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName3"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/rl3"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewName4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#6e2c90"
+                    android:padding="8dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/clipboard"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:background="#ccc"
+                    android:layout_toRightOf="@id/imageViewName4"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName4"
+                    />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
