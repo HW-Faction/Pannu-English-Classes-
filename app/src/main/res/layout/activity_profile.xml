@@ -246,7 +246,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="by clicking continue you agree to share your data with us and agree with our data policy"
+                    android:text="By clicking continue you agree to share your data with us and agree with our data policy"
                     android:layout_below="@+id/continueRegister"/>
 
             </RelativeLayout>

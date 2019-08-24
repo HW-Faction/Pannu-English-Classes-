@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -15,6 +16,11 @@ public class ProfileActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     private Button continueRegister ;
+    private EditText name;
+    private EditText age;
+    private EditText email;
+    private EditText place;
+    private EditText gender;
 
 
 
@@ -30,6 +36,12 @@ public class ProfileActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         continueRegister = findViewById(R.id.continueRegister);
+        name = findViewById(R.id.fullname);
+        age = findViewById(R.id.age);
+        email = findViewById(R.id.email);
+        gender = findViewById(R.id.gender);
+        place = findViewById(R.id.birthpalce);
+        name = findViewById(R.id.fullname);
 
 
         continueRegister.setOnClickListener(new View.OnClickListener() {
