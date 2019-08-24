@@ -149,11 +149,19 @@
                     android:tint="#ffffff"
                     android:src="@drawable/clipboard"/>
 
-                <Spinner
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender (M or F)"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
                     android:background="#ccc"
-                    android:id="@+id/planets_spinner"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_toRightOf="@id/imageViewName3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imageViewName3"
+                    />
+
 
             </RelativeLayout>
 
