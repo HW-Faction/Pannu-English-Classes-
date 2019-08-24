@@ -79,7 +79,7 @@
                     android:background="#6e2c90"
                     android:padding="8dp"
                     android:tint="#ffffff"
-                    android:src="@drawable/clipboard"/>
+                    android:src="@drawable/name"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                     android:background="#6e2c90"
                     android:padding="8dp"
                     android:tint="#ffffff"
-                    android:src="@drawable/clipboard"/>
+                    android:src="@drawable/lastname"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -147,7 +147,7 @@
                     android:background="#6e2c90"
                     android:padding="8dp"
                     android:tint="#ffffff"
-                    android:src="@drawable/clipboard"/>
+                    android:src="@drawable/dob"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -181,7 +181,7 @@
                     android:background="#6e2c90"
                     android:padding="8dp"
                     android:tint="#ffffff"
-                    android:src="@drawable/clipboard"/>
+                    android:src="@drawable/gender"/>
 
                 <EditText
                     android:id="@+id/gender"
@@ -216,7 +216,7 @@
                     android:background="#6e2c90"
                     android:padding="8dp"
                     android:tint="#ffffff"
-                    android:src="@drawable/clipboard"/>
+                    android:src="@drawable/mail"/>
 
                 <EditText
                     android:id="@+id/email"
