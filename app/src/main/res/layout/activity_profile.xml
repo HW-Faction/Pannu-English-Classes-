@@ -87,7 +87,7 @@
                     android:hint="Full Name"
                     android:paddingLeft="10dp"
                     android:textSize="18sp"
-                    android:id="@+id/username"
+                    android:id="@+id/fullname"
                     android:background="#ccc"
                     android:layout_toRightOf="@id/imageViewName"
                     android:layout_alignParentTop="true"
@@ -119,6 +119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Birth Place"
+                    android:id="@+id/birthpalce"
                     android:paddingLeft="10dp"
                     android:textSize="18sp"
                     android:background="#ccc"
@@ -148,17 +149,11 @@
                     android:tint="#ffffff"
                     android:src="@drawable/clipboard"/>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Username"
-                    android:paddingLeft="10dp"
-                    android:textSize="18sp"
+                <Spinner
                     android:background="#ccc"
-                    android:layout_toRightOf="@id/imageViewName3"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignBottom="@+id/imageViewName3"
-                    />
+                    android:id="@+id/planets_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
 
             </RelativeLayout>
 
