@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Pannu English Classes</string>
     <string-array name="planets_array">
-        <item>Mercury</item>
+       
         <item>Venus</item>
         <item>Earth</item>
         <item>Mars</item>

@@ -2,7 +2,6 @@ package studio.goldenapp.pannuenglishclasses;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -35,7 +34,6 @@ public class ProfileActivity extends AppCompatActivity {
     private EditText place;
     private EditText gender;
     private String user_id;
-    private boolean isChanged = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,10 +114,10 @@ public class ProfileActivity extends AppCompatActivity {
 
             Map<String, String> userMap = new HashMap<>();
             userMap.put("name", user_name);
-            userMap.put("gender", user_gender);
+            userMap.put("gender", user_email);
             userMap.put("address", user_address);
             userMap.put("age", user_age);
-            userMap.put("mail", user_email);
+            userMap.put("mail", user_gender);
 
             firebaseFirestore.collection("Users").document(user_id).set(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
