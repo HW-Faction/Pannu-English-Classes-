@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Pannu English Classes</string>
     <string-array name="planets_array">
-        <item>Neptune</item>
     </string-array>
 </resources>
