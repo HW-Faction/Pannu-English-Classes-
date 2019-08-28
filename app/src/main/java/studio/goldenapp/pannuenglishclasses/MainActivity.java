@@ -25,10 +25,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, Authentication.class));
             finish();
         }
+
         if (currentUser != null) {
-            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+            startActivity(new Intent(MainActivity.this, QuizActivity.class));
             finish();
         }
+
     }
 
     @Override

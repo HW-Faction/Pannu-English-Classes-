@@ -105,6 +105,10 @@ public class ProfileActivity extends AppCompatActivity {
                     storeFirestore(user_name, user_email, user_address, user_age, user_gender);
 
                 }
+
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -126,7 +130,7 @@ public class ProfileActivity extends AppCompatActivity {
                     if(task.isSuccessful()){
 
                         Toast.makeText(ProfileActivity.this, "The user Settings are updated.", Toast.LENGTH_LONG).show();
-                        Intent mainIntent = new Intent(ProfileActivity.this, MainActivity.class);
+                        Intent mainIntent = new Intent(ProfileActivity.this, QuizActivity.class);
                         startActivity(mainIntent);
                         finish();
 
